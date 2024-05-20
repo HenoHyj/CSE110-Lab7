@@ -49,7 +49,6 @@ function addRecipesToDocument(recipes) {
 	recipes.forEach(recipe => {
 		const recipeCard = document.createElement('recipe-card');
 		recipeCard.data = recipe;
-
 		main.appendChild(recipeCard);
 	});
 }
@@ -86,15 +85,15 @@ function initFormHandler() {
 	//            make this easier to read), and then extract the keys and corresponding
 	//            values from the FormData object and insert them into recipeObject
 		let recipeObject = {
-			"imgSrc": formData.get('imgSrc'),
-			"imgAlt": formData.get('imgAlt'),
-			"titleLnk": formData.get('titleLnk'),
-			"titleTxt": formData.get('titleTxt'),
-			"organization": formData.get('organization'),
-			"rating":formData.get('rating'),
-			"numRatings": formData.get('numRatings'),
-			"lengthTime": formData.get('lengthTime'),
-			"ingredients": formData.get('ingredients')
+			"imgSrc": format.get('imgSrc'),
+			"imgAlt": format.get('imgAlt'),
+			"titleLnk": format.get('titleLnk'),
+			"titleTxt": format.get('titleTxt'),
+			"organization": format.get('organization'),
+			"rating":format.get('rating'),
+			"numRatings": format.get('numRatings'),
+			"lengthTime": format.get('lengthTime'),
+			"ingredients": format.get('ingredients')
 		};
 
 	// B6. TODO - Create a new <recipe-card> element
